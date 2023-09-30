@@ -1,0 +1,172 @@
+#,Positive Comments
+1,Love that this channel is still producing the same great content several years after I subscribed. The only thing that have changed are the awesome animations! Keep it up!
+2,"I built a watering system for my garden that uses a raspberry pi. It checks the weather forecast, has sensors for soil temperature and moisture levels, can switch between soaking or a mist, tracks the amount of watering time each day, sends weekly reports of all data points, and my wife hates it so it’s a win all around. 😂
+
+There are some things that I’ll change if I ever feel up to it. The main one is I’d put different zones for watering. Some plants require more water than others."
+3,Thanks so much for this helpful video. This is exactly what I needed as I'm trying to get my portfolio together. I appreciate how you go into detail and give useful real-world advice.
+4,"I feel like I have a good start for a portfolio. I've made a python script that can convert a video into a scratch project, I'm working on a sprite sheet maker that will have the ability to neatly order all the sprites in a grid, a node editor, or custom gui in scratch, while drawing everything using code (no images, just turtle graphics, except the mouse pointer), a couple websites, I have plans on making an advanced metronome web app, a program that can read, and dump all the data in mario kart tour, and probably the most impressive things, a level editor for where's my water, and a full library to modify anything in where's my water (wmwpy). I've also created a script to read a proprietary image format used in the where's my water games (waltex), I'm going to make a script to decompress a custom archive format created specifically for the where's my water games. I do also really want to create a patcher for where's my water, one that allows you to combine mods, and distribute mods without distributing any modified app files (it would be smaller file sizes, and avoid piracy). I still have a lot to do, but at least I have many years before I need to start looking for programming jobs."
+5,having worked wiTh Asp JS and python for web dev. I find python to be the best. Currently working with Postgresql flask on a project of mine and i am honestly suprised how much simpler and morr straightforward it is in comparison to the others I have mentioned
+6,Another cool project would be to make an online portfolio to showcase all your projects. You could even have some sort of blog and stuff to seem smart. I'm planning on doing this in the summer :)))
+7,Project Idea:  Inventory system for parts.  The application would have an entry page allowing you to add parts which would include information about the part and where it is stored in some physical storage system and a search page which would allow you to search the database by part or description keywords which would also tell you where the part is located in that physical storage area.
+8,"Thanks so much for this update Tim, it's really helpful"
+9,"Many of these projects are too high of difficulty for a solo junior developer (the presumptive target audience of this video) to implement *well*. Technical people will often be reading this code, and they will care about things like readability, grasp of the problem, elegance of the solution, etc. It is not necessarily a benefit to you if what you have under the hood is effectively a series of stack overflow or chat gpt snippets because you bit off a project that was more than someone of your experience level (or a solo person of any experience level) could realistically chew. It's good to push yourself and expand your skills, but those aren't usually the projects you want to bring into interviews. An interview project should be about showing mastery of the skills you already have."
+10,"Hi, I am a self taught programmer and I graduated with a BS in stats in 2021. I am coming up now on two years working as a full time SWE Frontend Dev. My goal is to eventually break into top tech companies, like faang. Is this possible for self taught devs? Have you worked alongside any self taught devs? I know I have a lot more to learn before I am ready but I just wanted to know if my resume will get thrown out automatically?"
+11,Thanks for the work you do bro honestly. Changing my life.
+12,"Hey Tim I'm interested in app development, can you guide me to any frameworks or languages i could do it on. I started flutter but I realised a little too late that it lacked alot of libraries for functions i wanted to perform so I had to drop it. I am experienced in programming though and have a strong grip on Python"
+13,Very nice content! At 4.18 there is a mistake in the Text. It should be Tech stack and not Text stack
+14,"This is real good man, appreciate the effort! Thanks a lot"
+15,"I really like your videos!!!
+Thanks for making all of these"
+16,"Cool infor, bugt I have a question about the last one with the python game. Why implament such a fix instead of creating an exe file with the game? As a beginner myself I'm curious as to why you might do one over the other, Thanks"
+17,so what do you recommend?
+18,"In my opinion, an original social media app would even be more impressive."
+19,Grind leet code
+20,"⁠ @NightmareNinjaBoobies whether it’s scratch or you copied from a yt tutorial, it’s still cringe because they’ve seen a million instagram clones before. It’s not that impressive. What is more impressive is if you can create a brand new social media concept from scratch that’s never been introduced in the marketplace, that’s even better. People aren’t that creative"
+21," @the-ironclad  I don't know that I agree. As long as the social media app you programmed has hard work and thought put into it. If you could recreate Instagram, recreate the backend, create a similar looking front end, and be able to explain all your code and decision making, then why wouldn't they be impressed? I would be. It takes a lot of knowledge and skill to do that. And if they have more than one project of similar quality? You have an in if you do all of that. 
+
+""Copying from a yt tutorial"" isn't bad either. People have to start somewhere. What separates copying and building your own project with a free resource though is taking that project and changing/building on top of what's there."
+22, @the-ironclad because its about getting your foot in the door to pay the bills and then you can work on your passion projects on tbe side
+23, @Juzzyjuzzy YES! Even for those of you who can’t think of anything: see if you can make an unofficial social app for your school
+24,​ @the-ironclad you're overcomplicating the process lmao at that point start a business
+25,"Very true! And he's put in the effort for a while, so deserves that success ⌨️"
+26,Can you show us how it works? Maybe like a video or something
+27,"Thank you so much, what an inspiration, I do have a cannabis garden and I will definitely be gonna working towards the same goal. If you create some sort of video or open source it, let me know."
+28," @powerball200  When watering by hand I liked watering in the morning. So, when I made the logic is was bias towards morning watering. 
+
+Anyway here is the jest of it. I set a 1 hr window in the morning from 6:30-7:30 am and inside that window if there is no rain in the forecast for that day I will run the soaking setting, basically drip irrigation, for 45 minutes or until the soil moisture level is at my desired set point. Then I’ll run the mist setting for 15 minutes. Through trial and error I found that the mist setting didn’t add much moisture to the ground so I don’t worry about moisture at this point. 
+
+Further watering happens when the plants need an extra “drink” on hot days. If the outdoor temperature is over 80 degrees Fahrenheit, that’s hot for us in Minnesota, and the soil moisture level reaches a variable I called very_dry then a afternoon_watering variable gets set to true. Since I don’t water to water at the hottest part of the day I wait to let another 30 minute soak cycle run at 7pm. 
+
+I have 3 moisture sensors in my garden and average the reading from them. Between this and the needs of plants, tomatoes need more water than peppers is the reason I’d like to put in zones. 
+
+The other thing is the soil temperature at this point I just collect the data since I have had good luck with the extra drink in the evenings on hot days. 
+
+The last caveat I’ll throw out is that this is my summer watering schedule. In the spring I water manually. Then once the temps get warmer and the plants are established I turn this on. Track the watering needs of your garden/plants for a little while and then adjust. I followed a tutorial on setting up moisture sensors and only had 3 settings I eventually added a 4 setting for extreme dry soil. 
+
+Sorry this is so long. It’s not the complete logic but it’s the quick version of it lol."
+29, @TN-cx4qi  best man. You got any source code of your raspberry pi? Where you programmes all this?
+30,Oh wow that's so creative. I've never heard of something like that.
+31," @kiddhkane to be fair, stuff like “recreate a ___” isn’t very creative either. Both of these things show your skill set though."
+32,"Pretty cool idea
+I’m gon hop on this"
+33,"well, what prevents you from carefully reading through those snippets and actually learning them , so that they become your own expertise? 
+I mean, if I would only build a project that I can create without outside information - I could only build html pages for a very long time :D 
+Everything else took some googling\chatgpting etc and learning a lot of new concepts.
+As for worries about ""technical people""-  they also know very well, that building a project from scratch - is not even a junior developer`s job (it is outside of his competence by default, since on actual real project he never does this), so they still appreciate your courage and work, even if it is far from elegancy and readability."
+34,Dude - with a stats background you'd be very successful in AI
+35,Appreciate you!
+36,Very nice tips Tim. Thank you
+37,"Not hating on Tim I actually think he’s very smart and talented. But, have you guys ever think that, if you build projects that other couple thousand people make that will help you? To practice and learn? Absolutely, to gain employment? Nope. The best project you can ever make will be a unique one for you and your needs."
+38,"i really cannot motivate myself unless it's a ""real"" thing.  like... i cannot be fucked to do any of these types of projects at all.  but 2 years ago i decided to make a web platform for serving up a kind of ""augmented"" version of a book i had written - it was sort of like a wiki, where you could read through the book and also click on character/place names to pull up their bio and description and images of them that my friend had drawn.  i also used python to automate the augmentation of the book text every time i updated the book.
+
+i would sit and work on it basically the entire day, forgetting to eat and go to the bathroom and so on without batting an eye.
+
+but ask me to spend 20 minutes doing some arbitrary python script to automate something i don't care about?  i'll procrastinate like FUCK"
+39,Very good content! Thanks!
+40,Write something you're passionate about.  It'll usually make you stand out and bring out the best in you.
+41,"These are much better that chat GPT recommendations. Even if not, I am now realizing I prefer recommendations from people over neural networks. I am not yet sure why."
+42,"I use MPV - MongoDB, Python (Flask, Django), VueJS / or Postgress, Python (Flask, Django), VueJS, Quasar framework is also cool"
+43,Thank you! Just a quick question. Are programming games good projects to have on a resume or not really?
+44,"Thank you, helpful video."
+45,"I like that closed captions wrote ""MongoDB is a no skill database."
+46,"So does the app not really matter as long as it is solving anything? He said that textbook page thing was a talking point in interviews, but it sounds like it was a more difficult version of a textbook PDF?"
+47,Great video!
+48,"Not that hard tbh, i could write a new language with basic arithmetic support in a day"
+49,chat GPT is most likely just averaging out what humans have already said online so i don't think this really makes sense.  it doesn't just make stuff up lol
+50,Thanks for ideas!
+51,He gets more attractive in every video. The beard got me shook. :cat-orange-whistling:
+52,"IMHO If you apply for a job and having any project with the right stack and you can tell me the challenges you encountered using those stacks. Not challenges you find as a first hit on google. The challenges you had with your project and how you dealt with them. As long as you are no graphic designer I don't care what your project look like or so.
+
+I want to know:
+- Your problem solving skills (with the tech stack we use and you claim to be an expert): challenges -> your solutions
+- You have a understancing of Clean Code: SOLID Principle
+- You know when to performance optimize and when not
+- You know Unit Testing and such things
+
+After that I know you can code and the rest is do you fit into the team, which is way more important than you might think.
+We as a company can teach most of the hard skills to you, but if you don't match the team than we can't do anything about that.
+
+I got my first job with 17/18 as a software engineer, I had a fully written social media application (there were no easy frameworks like nowadays for that). We are talking 2003 - 2005.
+In the job interview I detailed explained challenges I had and how I solved them. I explained what of the application I wrote and what was written by others and so on. I just knew my stuff cause it was build by me not Chat-GPT or Stackoverflow. Those things basicly didn't exists back then.
+After that I had job experience and always could talk about projects (without breaking NDA or so) that I worked on professionally.
+
+Even to this day, I develop Software for over 25 years now. I read and watch alot of stuff so I keep constantly learning.
+
+My tip:
+- There is no full stack, make a decision frontend or backend. You obviously wants to have some knowledge in the other field for better understanding and such. But it is very hard to be a master in both. Choose a tech stack that is used by companies. Bullet proof boring tech stacks that will land you a job. Check what the job offers in your area want and pick one of those stacks. Try to become really good at that tech stack. If you have a deep understanding of a tech stack than you will also find it easier to checkout a new one and so on.
+Most likely currently you will have a ARM or X64 Architecture and guess what, everything is build on that. So even if some fancy new tech stack comes around in the very depth you will find similarities.
+- Have fun, do projects that you like and have fun. I would rather your eyes sparkle and you show me a tetris website than you showed me a facebook clone but your eyes tell me you hated it. You don't need to be an extrovert or good at talking. If you show/explain me your project and challenges your eyes will spark or not, this is very hard/impossible to hide. I want to hire you, if you love your job.
+- Just get good ;)"
+53,Cool projects
+54,I wonder who made algo visualizer projects popular 🤔
+55,Great video
+56,Thank you Tim
+57,"Hi ,is there any online python courses  thanks"
+58,Good ideas
+59,That was well explained. I learnt a lot in your write up. Thank u
+60,Are they actually  good projects to put in resume? And are they really hard to make?
+61,Yes! Check out programmingexpert.io
+62, @notxarbtech1349  no lol who told you that?
+63, @opcon3155  ok buddy
+64, @notxarbtech1349  alright I guess because of the whole jinja templating it becomes somewhat full stack
+65, @opcon3155  yep
+66,"Ah yes, ""text tacks"""
+67,"All these have to be built by me right? not with a tutorial 
+
+is it even worth it having tutorial projects on my portfolio?"
+68,But... coffee makers have a built in system to brew at a certain time...
+69,Arduino is good for iot
+70,Is it only me or is the fps of the video pretty low?
+71,Nice
+72,Interesting staff
+73,"i think tim is getting out of tutorials, please make tauri tutorial"
+74,Thanks
+75,Let’s grape the guy and pretend drugs are a suitable compensation for a straight guy that doesn’t do drugs
+76,The beard looks good on him. Let him be
+77,Yes
+78,number 2
+79,Number 7
+80,"a recipie a checklist for building a projects so that they stand up during an interview! 
+
+1,make sure i'ts easy to run and easy to use
+- can't have so many installations.... inorder to just run the project 
+2, you want something ideally unique and creative 
+- if you are just following tutorial, if you are just building a projects other 100 persons did then it's not good can't impress the interviewers 
+- it can't stand as the personal , custom , idealy solve some problem project you made.
+3, the project should empy that you have a deep understanding of programming or you are a good programmer it should seem so complicated evenif it's not it should seem complicated 
+- the interviewers should say ""oh he must have to do this and this in order for this project to work, he must have did alots of things..."" this's the sense you need the interviewers need to sense even when hearing the name of the project  to make it impressive 
+4, it should have a great git hub, should have a good read me , should be very presentable, should have a necessary comments so that readers can understand the code easily 
+- nic and clean 
+- well written 
+- comments explaining it 
+
+web application projects recommendations 
+1, recommended stack should be used to build a web applications 
+- mern stack  -> mongo db, expresses react, node js 
+4:50 other stacks he also showed 
+2, there's also a stack that included ""postgres""
+- so if you are looking to use an actual SQL database ( A LOT OF COMPANIED MIGHT BE LOOKING FOR THIS) if you are applying for a front end developer you don't need to mess with this but 
+if you are applying for a full stack or a backend role then you should use SQL database  
+so that you might do some backe end and  connected to ""postgres db""  and you have some  some kind of react front end or other whatever you want to build. 
+3, you could do a serverless stack 
+- whatever serversless function you want to write is fine 
+- he uses something like ""Fire base"" b/se is the simplease especially during deployment 
+
+so depending on what role you are applying choose above this things 
+
+web project ideas 
+1, social media colen  (twitter clone, Instagram snapchat..) it's complicated you don't need to clone every thing just to show you understand the things there 
+- how to interact with a database  
+- how to serve like live data 
+- may be notifying users 
+
+2, sub part of social media like  implementing a live feed 
+is complicated  - GOOD FOR BACKEND PRESPECTIVE
+- loading live data 
+a recommendation engine ( for showing d/t data or ads ) 
+
+3, sport bracket generator (march madness bracket like website ) 
+- 7:26 he did this project 
+
+4, 7:53 type racer project"
+81,I was literally looking out the answer for this 2 hours ago ! Glad you Dropped it <3 Useful informations :thanksdoc:

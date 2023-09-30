@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Execute Python Script and Display Comment Tables</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins", sans-serif;
+            /* border: 1px solid red; */
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100vh;
+            font-family: "poppins", sans-serif;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 4rem;
+            color: #fff;
+        }
+
+        .input {
+            background-color: #2d2d2d;
+            border-bottom: 4px solid #282828;
+            margin: 0 auto;
+        }
+
+        .input-container {
+            padding: 60px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            gap: 15px;
+        }
+
+        .input-container form input {
+            background-color: #fff;
+            border: 4px solid #000000;
+            padding: 15px 20px;
+            border-radius: 10px;
+            width: 500px;
+            font-size: 1.25rem;
+        }
+
+        .btn {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border: 4px solid #000;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        .comment-numbers {
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        pre {
+            font-size: 1.5rem;
+            font-family: 'poppins';
+            font-weight: 500;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        thead>tr>th {
+            width: fit-content;
+            padding-right: 20px;
+        }
+
+        .tab {
+            margin-top: 50px;
+        }
+
+        
+        .d-none {
+            display: none;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #2d2d2d;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            letter-spacing: 1px;
+            word-spacing: 1.25px;
+            margin-top: 80px;
+        }
+
+        @media(max-width:720px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .input-container form input {
+
+                padding: 8px 10px;
+                border-radius: 10px;
+                width: 250px;
+                font-size: 1rem;
+            }
+
+            .btn {
+
+                padding: 8px 10px;
+                border-radius: 10px;
+                border: 4px solid #000;
+                font-weight: 500;
+                font-size: 1rem;
+            }
+            pre{
+                font-size: 1rem;
+            }
+            img{
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="input">
+        <div class="input-container container-xl">
+            <h1>YouTube Comment<br>Analyzer</h1>
+            <form method="post" action="{% url 'execute_script' %}">
+                {% csrf_token %}
+                <input type="text" name="input_data" id="input_data" placeholder="Enter video URL" required>
+                <button class="btn" type="submit">Generate</button>
+            </form>
+        </div>
+    </div>
+    <div class="loading"></div>
+    <div class="output">
+        <div class="output-container container-xl">
+            <div class="comment-numbers">
+                <div class="text">
+                    {% if script_output %}
+                    <pre>{{ script_output }}</pre>
+                    {% endif %}
+                </div>
+                <div class="pie-chart">
+                    {{ image_html|safe }}
+                </div>
+            </div>
+            <div class="comment-tables">
+                {% if positive_table or neutral_table or negative_table %}
+                <div class="positive-table">
+                    {% if positive_table %}
+                    <h3>Positive Comments:</h3>
+                    {{ positive_table|safe }}
+                    {% endif %}
+                </div>
+                <div class="tab neutral-table">
+                    {% if neutral_table %}
+                    <h3>Neutral Comments:</h3>
+                    {{ neutral_table|safe }}
+                    {% endif %}
+                </div>
+                <div class="tab negative-table">
+                    {% if negative_table %}
+                    <h3>Negative Comments:</h3>
+                    {{ negative_table|safe }}
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+        Made By Manav Rathod 😀
+
+    </div>
+
+
+    <script>
+        function removeBorder() {
+            // Get all elements in the DOM
+            var allElements = document.getElementsByTagName('table');
+
+            // Loop through each element
+            for (var i = 0; i < allElements.length; i++) {
+                // Remove the 'style' attribute
+                allElements[i].removeAttribute('border');
+            }
+        }
+
+        // Call the function to remove inline styles
+        removeInlineStyles();
+
+        function removeInlineStyles() {
+            // Get all elements in the DOM
+            var allElements = document.getElementsByTagName('*');
+
+            // Loop through each element
+            for (var i = 0; i < allElements.length; i++) {
+                // Remove the 'style' attribute
+                allElements[i].removeAttribute('style');
+            }
+        }
+
+        // Call the function to remove inline styles
+        removeInlineStyles();
+    </script>
+
+    
+</body>
+
+</html>

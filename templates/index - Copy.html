@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Execute Python Script and Display Comment Tables</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins", sans-serif;
+            /* border: 1px solid red; */
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        img{
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Execute Python Script and Display Comment Tables</h1>
+
+    <!-- Script Execution Form -->
+    <form method="post" action="{% url 'execute_script' %}">
+        {% csrf_token %}
+        <label for="input_data">Input Data:</label>
+        <input type="text" name="input_data" id="input_data" required>
+        <button type="submit">Generate</button>
+    </form>
+
+    <!-- Script Output -->
+    {% if script_output %}
+    <h2>Script Output:</h2>
+    <pre>{{ script_output }}</pre>
+    {% endif %}
+
+    {{ image_html|safe }}
+
+    <!-- Comment Tables -->
+    {% if positive_table or neutral_table or negative_table %}
+    <h2>Comment Tables</h2>
+
+    {% if positive_table %}
+    <h3>Positive Comments:</h3>
+    {{ positive_table|safe }}
+    {% endif %}
+
+    {% if neutral_table %}
+    <h3>Neutral Comments:</h3>
+    {{ neutral_table|safe }}
+    {% endif %}
+
+    {% if negative_table %}
+    <h3>Negative Comments:</h3>
+    {{ negative_table|safe }}
+    {% endif %}
+    {% endif %}
+</body>
+
+</html>
